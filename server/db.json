@@ -1,8 +1,34 @@
 {
-  "students": [
+  "studentdb": [
     {
-      "id": "test",
-      "name": "testName"
+      "id": "D5JK7XrGBpwcJPAa1LGtr",
+      "studentNumber": "1",
+      "name": "student-1",
+      "status": false
+    }
+  ],
+  "vehicledb": [
+    {
+      "id": "tqU_7dfSfGgMXlqdNmZ_l",
+      "registration": "regis-1",
+      "pickupStudentId": "D5JK7XrGBpwcJPAa1LGtr"
+    },
+    {
+      "id": "RhEvJ_OCv5XmgC-C9PKnl",
+      "registration": "regis-2",
+      "pickupStudentId": "D5JK7XrGBpwcJPAa1LGtr"
+    }
+  ],
+  "classdb": [
+    {
+      "id": "classA",
+      "students": [
+        "D5JK7XrGBpwcJPAa1LGtr"
+      ]
+    },
+    {
+      "id": "classB",
+      "students": []
     }
   ]
 }
