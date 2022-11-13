@@ -1,34 +1,171 @@
 {
   "studentdb": [
     {
-      "id": "D5JK7XrGBpwcJPAa1LGtr",
-      "studentNumber": "1",
-      "name": "student-1",
+      "id": "gHGA46Sbi_qC9sT_tGNqc",
+      "studentNumber": "travis-123",
+      "name": "travis",
+      "status": false,
+      "classId": "classA"
+    },
+    {
+      "id": "itxXjy9reVX2h786Cn_od",
+      "studentNumber": "test-000",
+      "name": "test-student-1",
+      "status": false,
+      "classId": "classB"
+    },
+    {
+      "id": "n8sg3UdX_b8-cvuyZxz0V",
+      "studentNumber": "test-student-1",
+      "name": "travis",
+      "status": false,
+      "classId": "classA"
+    },
+    {
+      "id": "TjLFCTtD7VHFjt823WMW1",
+      "studentNumber": "test-student-2",
+      "name": "test-student-3",
+      "status": false,
+      "classId": "classA"
+    },
+    {
+      "id": "Kaw_fjoWpDIT7Fip9MZEV",
+      "studentNumber": "a",
+      "name": "a",
+      "status": false,
+      "classId": "classA"
+    },
+    {
+      "id": "H_1JOAWBX9h05roR_NrWG",
+      "studentNumber": "b",
+      "name": "b",
       "status": false
+    },
+    {
+      "id": "OmZlY1r8syFhTCyIKl88U",
+      "studentNumber": "c",
+      "name": "c",
+      "status": false,
+      "classId": "classA"
+    },
+    {
+      "id": "eFTX9VPCCkiJE4i8YFypN",
+      "studentNumber": "d",
+      "name": "d",
+      "status": true,
+      "classId": "classB"
+    },
+    {
+      "id": "wnuWdp9Coqu0rggLHT8wS",
+      "studentNumber": "e",
+      "name": "e",
+      "status": false,
+      "classId": "classA"
+    },
+    {
+      "id": "x6RLk8BIM8SqosShLC9S6",
+      "studentNumber": "f",
+      "name": "f",
+      "status": true,
+      "classId": "classB"
+    },
+    {
+      "id": "Rh4NTVJzQWpKw_ABULVyr",
+      "studentNumber": "g",
+      "name": "g",
+      "status": false,
+      "classId": "classA"
     }
   ],
   "vehicledb": [
     {
-      "id": "tqU_7dfSfGgMXlqdNmZ_l",
-      "registration": "regis-1",
-      "pickupStudentId": "D5JK7XrGBpwcJPAa1LGtr"
+      "id": "_WfibeGwXrci9ZT435qrH",
+      "registration": "vehicle-1",
+      "pickupStudentId": "gHGA46Sbi_qC9sT_tGNqc"
     },
     {
-      "id": "RhEvJ_OCv5XmgC-C9PKnl",
-      "registration": "regis-2",
-      "pickupStudentId": "D5JK7XrGBpwcJPAa1LGtr"
+      "id": "yTjbpawQmLoB0c2hiyddk",
+      "registration": "vehicle-2",
+      "pickupStudentId": "itxXjy9reVX2h786Cn_od"
+    },
+    {
+      "id": "-81cObEAR1yxnn-i22NS8",
+      "registration": "vehicle-3",
+      "pickupStudentId": "n8sg3UdX_b8-cvuyZxz0V"
+    },
+    {
+      "id": "DsTNAwaihLIBn9a9PpSr_",
+      "registration": "vehicle-4",
+      "pickupStudentId": "TjLFCTtD7VHFjt823WMW1"
+    },
+    {
+      "id": "WBEMgLGi7HcA4GFiMwr1c",
+      "registration": "test-motor",
+      "pickupStudentId": "TjLFCTtD7VHFjt823WMW1"
+    },
+    {
+      "id": "tQ1XK3hg796T1A5qz1tWH",
+      "registration": "test-motor-22",
+      "pickupStudentId": "TjLFCTtD7VHFjt823WMW1"
+    },
+    {
+      "id": "CCfCvxr2wN2u2adeDYVzL",
+      "registration": "fff",
+      "pickupStudentId": "TjLFCTtD7VHFjt823WMW1"
+    },
+    {
+      "id": "7fypCwF_Ba9p3wJkDArsX",
+      "registration": "a",
+      "pickupStudentId": "Kaw_fjoWpDIT7Fip9MZEV"
+    },
+    {
+      "id": "bmo3UY4_hcoYu9aGwtvQ4",
+      "registration": "c",
+      "pickupStudentId": "OmZlY1r8syFhTCyIKl88U"
+    },
+    {
+      "id": "KqMrbT5pZ6UsV8rY2Eh86",
+      "registration": "d",
+      "pickupStudentId": "eFTX9VPCCkiJE4i8YFypN"
+    },
+    {
+      "id": "R_LxShtgtoj80E6T5B1me",
+      "registration": "e",
+      "pickupStudentId": "wnuWdp9Coqu0rggLHT8wS"
+    },
+    {
+      "id": "zx0eku_kke7MwZbVfB7Hr",
+      "registration": "f",
+      "pickupStudentId": "x6RLk8BIM8SqosShLC9S6"
+    },
+    {
+      "id": "S-xbRVptjlM0Rjw9nNBSc",
+      "registration": "g",
+      "pickupStudentId": "Rh4NTVJzQWpKw_ABULVyr"
     }
   ],
   "classdb": [
     {
-      "id": "classA",
+      "id": "WSJhMJYUULWxxUuu7ueip",
+      "classId": "classA",
       "students": [
-        "D5JK7XrGBpwcJPAa1LGtr"
+        "gHGA46Sbi_qC9sT_tGNqc",
+        "n8sg3UdX_b8-cvuyZxz0V",
+        "TjLFCTtD7VHFjt823WMW1",
+        "Kaw_fjoWpDIT7Fip9MZEV",
+        "OmZlY1r8syFhTCyIKl88U",
+        "wnuWdp9Coqu0rggLHT8wS",
+        "Rh4NTVJzQWpKw_ABULVyr"
       ]
     },
     {
-      "id": "classB",
-      "students": []
+      "id": "p5tLKpAsdqWvMMfPbd0KR",
+      "classId": "classB",
+      "students": [
+        "itxXjy9reVX2h786Cn_od",
+        "eFTX9VPCCkiJE4i8YFypN",
+        "x6RLk8BIM8SqosShLC9S6"
+      ]
     }
   ]
 }

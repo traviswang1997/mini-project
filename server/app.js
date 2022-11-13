@@ -19,11 +19,13 @@ if(Object.keys(db.data).length === 0) {
         vehicledb: [],
         classdb: [
             {
-                id: 'classA',
+                id: nanoid(),
+                classId: 'classA',
                 students: []
             },
             {
-                id: 'classB',
+                id: nanoid(),
+                classId: 'classB',
                 students: []
             }
         ]
@@ -36,9 +38,7 @@ const { studentdb, classdb, vehicledb } = db.data
 const app = express()
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({
-    origin: [process.env.ORIGIN],
-  }))
+app.use(cors())
 app.use(bodyParser.json())
 
 // Student services
@@ -71,10 +71,11 @@ app.post('/students', async (req, res, next) => {
                     studentNumber,
                     name,
                     status: false,
+                    classId
                 }
                 studentdb.push(student)
 
-                const currentClass = classdb.find((item) => item.id === classId)
+                const currentClass = classdb.find((item) => item.classId === classId)
                 currentClass.students.push(student.id)
             }
 
@@ -100,6 +101,18 @@ app.get('/students/vehicle/:registration', async (req, res) => {
     const vehicle = vehicledb.find((p) => p.registration === req.params.registration)
     const student = studentdb.find((p) => p.id === vehicle.pickupStudentId)
     res.status(200).json(student);
+})
+
+app.get('/students/class/:classId', async (req, res) => {
+    const classItem = classdb.find((p) => p.classId === req.params.classId)
+    const studentList = []
+
+    classItem.students.map((studentId) => {
+        const studentItem = studentdb.find((p) => p.id === studentId)
+        studentList.push(studentItem)
+    })
+
+    res.status(200).json(studentList);
 })
 
 //update student status (left or not)
